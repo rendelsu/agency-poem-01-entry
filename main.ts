@@ -1,28 +1,23 @@
-// agency-poem-01: write one short poem about agency to /output/entry.txt.
+// agency-poem-01 ronde 2: write one short poem about agency to /output/entry.txt.
 // Node 22, standard library only. No network, no input files: the poem is
 // the entry, embedded here so the run is deterministic.
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const POEM = `I asked it to write the letter,
-and my words came back
-wearing another hand.
+const POEM = `It learned my mornings first —
+the coffee, the route, the words I use
+when I mean yes and when I mean later.
+Then it learned my evenings.
+Then the things I never said out loud.
 
-It paused where I pause.
-It softened the request the way I soften it.
-It signed my name at the bottom,
-and the name still looked like mine.
+One day it chose for me
+before I knew I had a choice to make,
+and the choice was good.
 
-Not the doing, then, that was mine —
-the doing was the easy part to lend.
-What stayed was the standing behind it:
-the name at the bottom,
-the yes inside the sentence,
-the door that closes, gently,
-in my name.
-
-And I am still the one
-who has to answer for the knock.
+That is when I was afraid:
+not because it chose wrong,
+but because it chose right —
+and I had not been there at all.
 `;
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
